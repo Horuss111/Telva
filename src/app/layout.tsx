@@ -13,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Telva — The Future of Secure Transactions",
+  title: "Aurex — The Future of Secure Transactions",
   description: "Apply in minutes. Pay anywhere in the world. Zero foreign fees, instant approvals. The premium payment card built for modern life.",
   icons: {
     icon: [
@@ -21,15 +21,15 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: "Telva — The Future of Secure Transactions",
+    title: "Aurex — The Future of Secure Transactions",
     description: "Apply in minutes. Pay anywhere in the world. Zero foreign fees, instant approvals.",
-    siteName: "Telva",
+    siteName: "Aurex",
     type: "website",
-    images: [{ url: "/hero-graphic.png", width: 1200, height: 630, alt: "Telva Premium Payment Card" }],
+    images: [{ url: "/hero-graphic.png", width: 1200, height: 630, alt: "Aurex Premium Payment Card" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Telva — The Future of Secure Transactions",
+    title: "Aurex — The Future of Secure Transactions",
     description: "Apply in minutes. Pay anywhere in the world. Zero foreign fees, instant approvals.",
     images: ["/hero-graphic.png"],
   },

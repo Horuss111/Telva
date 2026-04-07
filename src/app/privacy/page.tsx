@@ -4,8 +4,8 @@ import { NavClient } from "@/components/ui/nav-client";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Telva",
-  description: "How Telva collects, uses, and protects your personal data.",
+  title: "Privacy Policy — Aurex",
+  description: "How Aurex collects, uses, and protects your personal data.",
 };
 
 export default function PrivacyPage() {
@@ -25,7 +25,7 @@ export default function PrivacyPage() {
             <div className="legal-body">
               <section>
                 <h2>1. Who we are</h2>
-                <p>Telva, Inc. (&ldquo;Telva&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) operates the website at telva.co and provides premium payment card services. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or apply for a Telva card.</p>
+                <p>Aurex, Inc. (&ldquo;Aurex&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) operates the website at aurex.co and provides premium payment card services. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or apply for a Aurex card.</p>
               </section>
 
               <section>
@@ -101,7 +101,7 @@ export default function PrivacyPage() {
                   <li>Data portability — receive your data in a structured, machine-readable format.</li>
                   <li>Withdraw consent at any time where processing is based on consent.</li>
                 </ul>
-                <p>To exercise any of these rights, contact us at <a href="mailto:privacy@telva.co">privacy@telva.co</a>.</p>
+                <p>To exercise any of these rights, contact us at <a href="mailto:privacy@aurex.co">privacy@aurex.co</a>.</p>
               </section>
 
               <section>
@@ -122,8 +122,8 @@ export default function PrivacyPage() {
               <section>
                 <h2>12. Contact us</h2>
                 <p>For any questions about this Privacy Policy or our data practices, please contact:</p>
-                <p><strong>Telva, Inc.</strong><br />
-                Email: <a href="mailto:privacy@telva.co">privacy@telva.co</a><br />
+                <p><strong>Aurex, Inc.</strong><br />
+                Email: <a href="mailto:privacy@aurex.co">privacy@aurex.co</a><br />
                 WhatsApp: <a href="https://wa.me/201006741810">+20 100 674 1810</a></p>
               </section>
             </div>

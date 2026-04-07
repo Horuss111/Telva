@@ -6,18 +6,18 @@ export function CookieBanner() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    if (!localStorage.getItem("telva_cookie_consent")) {
+    if (!localStorage.getItem("aurex_cookie_consent")) {
       setVisible(true);
     }
   }, []);
 
   const accept = () => {
-    localStorage.setItem("telva_cookie_consent", "accepted");
+    localStorage.setItem("aurex_cookie_consent", "accepted");
     setVisible(false);
   };
 
   const decline = () => {
-    localStorage.setItem("telva_cookie_consent", "declined");
+    localStorage.setItem("aurex_cookie_consent", "declined");
     setVisible(false);
   };
 

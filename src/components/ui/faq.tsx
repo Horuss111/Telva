@@ -5,7 +5,7 @@ import { useState } from "react";
 const faqs = [
   {
     q: "Is there an annual fee?",
-    a: "No. Telva has zero annual fees, zero foreign transaction fees, and zero maintenance charges. You only ever pay for what you spend.",
+    a: "No. Aurex has zero annual fees, zero foreign transaction fees, and zero maintenance charges. You only ever pay for what you spend.",
   },
   {
     q: "Will applying affect my credit score?",
@@ -16,8 +16,8 @@ const faqs = [
     a: "Our AI-powered review delivers a decision in seconds — not days. Most applicants hear back before they've finished their coffee.",
   },
   {
-    q: "Can I use Telva internationally?",
-    a: "Yes. Telva is accepted in 150+ countries on the Visa and Mastercard networks. You'll always get the real interbank exchange rate with no markup.",
+    q: "Can I use Aurex internationally?",
+    a: "Yes. Aurex is accepted in 150+ countries on the Visa and Mastercard networks. You'll always get the real interbank exchange rate with no markup.",
   },
   {
     q: "How is my card secured?",
@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     q: "What currencies can I hold?",
-    a: "Telva supports 150+ currencies. You can hold and convert between them at real exchange rates with no hidden spread.",
+    a: "Aurex supports 150+ currencies. You can hold and convert between them at real exchange rates with no hidden spread.",
   },
 ];
 

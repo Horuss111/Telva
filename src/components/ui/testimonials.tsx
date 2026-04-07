@@ -3,7 +3,7 @@
 const testimonials = [
   {
     quote:
-      "Switched from three separate cards to just Telva. Zero foreign fees alone saved me over $400 last quarter while traveling for client work.",
+      "Switched from three separate cards to just Aurex. Zero foreign fees alone saved me over $400 last quarter while traveling for client work.",
     name: "Salma Ashraf",
     role: "Founder, Luma Labs",
     initials: "SA",

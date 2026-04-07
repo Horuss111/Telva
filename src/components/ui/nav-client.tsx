@@ -27,11 +27,11 @@ const SEARCH_ITEMS = [
   { type: "FAQ", label: "Is there an annual fee?", desc: "Zero annual fees, always.", href: "#faq" },
   { type: "FAQ", label: "Will applying affect my credit score?", desc: "Soft check only — no impact.", href: "#faq" },
   { type: "FAQ", label: "How quickly will I get a decision?", desc: "Seconds, not days.", href: "#faq" },
-  { type: "FAQ", label: "Can I use Telva internationally?", desc: "150+ countries, real exchange rate.", href: "#faq" },
+  { type: "FAQ", label: "Can I use Aurex internationally?", desc: "150+ countries, real exchange rate.", href: "#faq" },
   { type: "FAQ", label: "How is my card secured?", desc: "PCI-DSS Level 1, 256-bit AES.", href: "#faq" },
   { type: "FAQ", label: "When does my physical card arrive?", desc: "3–5 business days.", href: "#faq" },
   // Features
-  { type: "Feature", label: "Telva Card", desc: "Physical and virtual, worldwide.", href: "#features" },
+  { type: "Feature", label: "Aurex Card", desc: "Physical and virtual, worldwide.", href: "#features" },
   { type: "Feature", label: "256-bit Encryption", desc: "Bank-grade security.", href: "#features" },
   { type: "Feature", label: "AI Spend Insights", desc: "Real-time smart alerts.", href: "#features" },
   { type: "Feature", label: "Multi-currency Payments", desc: "150+ currencies at interbank rates.", href: "#features" },
@@ -231,7 +231,7 @@ export function NavClient() {
           <svg viewBox="0 0 24 24">
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" fill="none" />
           </svg>
-          <a href="/" style={{ color: "inherit" }}>Telva</a>
+          <a href="/" style={{ color: "inherit" }}>Aurex</a>
         </div>
 
         {/* Right — actions */}

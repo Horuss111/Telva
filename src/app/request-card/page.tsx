@@ -43,7 +43,7 @@ export default function RequestCardPage() {
                     <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
                       stroke="currentColor" strokeWidth="2" strokeLinejoin="round" fill="none" />
                   </svg>
-                  <span>Telva</span>
+                  <span>Aurex</span>
                 </div>
                 <div className="rc-card-chip">
                   <div className="rc-chip-inner"><span /><span /><span /></div>

@@ -27,7 +27,7 @@ const logos = [
 const features = [
   {
     icon: "💳",
-    title: "Telva Card",
+    title: "Aurex Card",
     description: "A premium physical and virtual card accepted worldwide — Visa & Mastercard networks, zero foreign transaction fees.",
   },
   {
@@ -60,7 +60,7 @@ const features = [
 const steps = [
   { number: "01", title: "Apply Online", description: "Fill out a quick application in under two minutes — no paperwork, no branch visit required." },
   { number: "02", title: "Get Approved", description: "Our AI-powered review process delivers a decision in seconds, not days." },
-  { number: "03", title: "Use Anywhere", description: "Your virtual card is ready instantly. Your physical Telva card ships within 3–5 business days." },
+  { number: "03", title: "Use Anywhere", description: "Your virtual card is ready instantly. Your physical Aurex card ships within 3–5 business days." },
 ];
 
 const stats = [
@@ -78,7 +78,7 @@ const footerLinks = {
     { label: "Blog", href: "https://wa.me/201006741810" },
   ],
   Products: [
-    { label: "Telva Card", href: "#features" },
+    { label: "Aurex Card", href: "#features" },
     { label: "Virtual Card", href: "#features" },
     { label: "Global Payments", href: "#features" },
     { label: "AI Insights", href: "#features" },
@@ -162,7 +162,7 @@ export default function Home() {
           <ScrollReveal>
             <section className="features-section" id="features">
               <div className="section-header">
-                <p className="section-eyebrow">Why Telva</p>
+                <p className="section-eyebrow">Why Aurex</p>
                 <h2 className="section-title">Everything you need<br />in one card</h2>
               </div>
               <div className="features-grid">
@@ -353,7 +353,7 @@ export default function Home() {
                   <svg viewBox="0 0 24 24" width="22" height="22">
                     <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" fill="none" />
                   </svg>
-                  <span>Telva</span>
+                  <span>Aurex</span>
                 </div>
                 <p className="footer-tagline">The premium payment card built for the world.<br />Apply in minutes, pay anywhere, zero fees.</p>
                 <div className="footer-social">
@@ -392,7 +392,7 @@ export default function Home() {
             </div>
 
             <div className="footer-bottom">
-              <span>© 2026 Telva, Inc. All rights reserved.</span>
+              <span>© 2026 Aurex, Inc. All rights reserved.</span>
               <div className="footer-bottom-links">
                 <a href="/privacy">Privacy</a>
                 <a href="/terms">Terms</a>

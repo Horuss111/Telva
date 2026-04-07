@@ -30,7 +30,7 @@ export async function POST(request: Request) {
                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
               </svg>
             </td>
-            <td style="font-size:18px;font-weight:500;letter-spacing:-0.02em;color:#ffffff;">Telva</td>
+            <td style="font-size:18px;font-weight:500;letter-spacing:-0.02em;color:#ffffff;">Aurex</td>
           </tr></table>
         </td></tr>
         <tr><td style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);border-radius:16px;padding:40px;border:1px solid rgba(255,255,255,0.08);">
@@ -76,15 +76,15 @@ export async function POST(request: Request) {
             ${cardType !== "virtual" ? `<tr><td><table cellpadding="0" cellspacing="0"><tr>
               <td style="font-size:18px;padding-right:12px;vertical-align:top;">📦</td>
               <td><p style="margin:0;font-size:13px;font-weight:600;">Physical card ships in 3–5 days</p>
-              <p style="margin:4px 0 0;font-size:12px;color:#888888;">Your premium Telva card is on its way.</p></td>
+              <p style="margin:4px 0 0;font-size:12px;color:#888888;">Your premium Aurex card is on its way.</p></td>
             </tr></table></td></tr>` : ""}
           </table>
         </td></tr>
         <tr><td style="padding-top:32px;text-align:center;">
           <p style="margin:0;font-size:12px;color:#555555;line-height:1.6;">
-            © 2026 Telva, Inc. · <a href="https://telva.co/privacy" style="color:#555555;">Privacy Policy</a> · <a href="https://telva.co/terms" style="color:#555555;">Terms of Service</a>
+            © 2026 Aurex, Inc. · <a href="https://aurex.co/privacy" style="color:#555555;">Privacy Policy</a> · <a href="https://aurex.co/terms" style="color:#555555;">Terms of Service</a>
           </p>
-          <p style="margin:8px 0 0;font-size:11px;color:#444444;">You received this email because you applied for a Telva card.</p>
+          <p style="margin:8px 0 0;font-size:11px;color:#444444;">You received this email because you applied for an Aurex card.</p>
         </td></tr>
       </table>
     </td></tr>
@@ -128,7 +128,7 @@ export async function POST(request: Request) {
           </table>
         </td></tr>
         <tr><td style="padding-top:20px;text-align:center;">
-          <p style="margin:0;font-size:11px;color:#444444;">Telva admin notification — do not reply to this email.</p>
+          <p style="margin:0;font-size:11px;color:#444444;">Aurex admin notification — do not reply to this email.</p>
         </td></tr>
       </table>
     </td></tr>
@@ -139,13 +139,13 @@ export async function POST(request: Request) {
   // Send both emails concurrently
   const [applicantResult, adminResult] = await Promise.all([
     resend.emails.send({
-      from: "Telva <onboarding@resend.dev>",
+      from: "Aurex <onboarding@resend.dev>",
       to: email,
-      subject: "Your Telva Card Application — Received",
+      subject: "Your Aurex Card Application — Received",
       html: applicantHtml,
     }),
     resend.emails.send({
-      from: "Telva <onboarding@resend.dev>",
+      from: "Aurex <onboarding@resend.dev>",
       to: ADMIN_EMAIL,
       subject: `New card application — ${firstName} ${lastName} (${cardLabel})`,
       html: adminHtml,
