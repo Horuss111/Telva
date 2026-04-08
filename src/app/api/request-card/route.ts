@@ -136,27 +136,26 @@ export async function POST(request: Request) {
 </body>
 </html>`;
 
-  // Send both emails concurrently
-  const [applicantResult, adminResult] = await Promise.all([
-    resend.emails.send({
-      from: "Aurex <onboarding@resend.dev>",
-      to: email,
-      subject: "Your Aurex Card Application — Received",
-      html: applicantHtml,
-    }),
-    resend.emails.send({
-      from: "Aurex <onboarding@resend.dev>",
-      to: ADMIN_EMAIL,
-      subject: `New card application — ${firstName} ${lastName} (${cardLabel})`,
-      html: adminHtml,
-    }),
-  ]);
+  // Send admin notification (critical) and applicant confirmation (best-effort)
+  const adminResult = await resend.emails.send({
+    from: "Aurex <onboarding@resend.dev>",
+    to: ADMIN_EMAIL,
+    subject: `New card application — ${firstName} ${lastName} (${cardLabel})`,
+    html: adminHtml,
+  });
 
-  if (applicantResult.error || adminResult.error) {
-    const err = applicantResult.error ?? adminResult.error;
-    console.error("Resend error:", err);
-    return Response.json({ error: err?.message }, { status: 500 });
+  if (adminResult.error) {
+    console.error("Resend admin email error:", adminResult.error);
+    return Response.json({ error: adminResult.error.message }, { status: 500 });
   }
+
+  // Applicant confirmation is best-effort — don't fail the submission if it errors
+  resend.emails.send({
+    from: "Aurex <onboarding@resend.dev>",
+    to: email,
+    subject: "Your Aurex Card Application — Received",
+    html: applicantHtml,
+  }).catch((err) => console.error("Applicant confirmation email failed:", err));
 
   return Response.json({ success: true });
 }
